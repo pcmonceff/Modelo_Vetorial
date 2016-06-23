@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47efe89e-75af-442c-95a7-4f508e92b2f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Modelo/Documento.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Modelo/Palavra.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Principal/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Modelo/Leitura.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Trabalho_RecuperacaoDaInformacao.iws" />
@@ -59,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Palavra.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Palavra.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modelo/Palavra.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -75,6 +72,22 @@
                 <element signature="e#754#755#0" expanded="true" />
                 <element signature="e#821#822#0" expanded="true" />
                 <element signature="e#865#866#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Leitura.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Modelo/Leitura.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="590">
+              <caret line="122" column="10" selection-start-line="122" selection-start-column="10" selection-end-line="122" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#895#896#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,6 +117,7 @@
         <option value="$PROJECT_DIR$/src/Principal/Main.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Documento.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Palavra.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Leitura.java" />
       </list>
     </option>
   </component>
@@ -206,6 +220,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -543,6 +559,20 @@
             <element signature="e#754#755#0" expanded="true" />
             <element signature="e#821#822#0" expanded="true" />
             <element signature="e#865#866#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Leitura.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="122" column="10" selection-start-line="122" selection-start-column="10" selection-end-line="122" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
           </folding>
         </state>
       </provider>
