@@ -11,8 +11,8 @@ public class Main {
 
 
         leitura.leArquivos();
-        leitura.imprimeIndice();
+        //leitura.imprimeIndice();
         //System.out.println(leitura.getIndice().get(0).getPalavra().toUpperCase());
-        //System.out.println(leitura.getIndice());
+        System.out.println(leitura.getIndice().size());
     }
 }
