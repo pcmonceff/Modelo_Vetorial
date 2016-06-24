@@ -15,6 +15,7 @@ import java.util.StringTokenizer;
 public class Leitura {
     private ArrayList<Palavra> indice;
     private ArrayList<String> arquivos;
+    private static Integer quantidadeArquivos = 0;
 
     public Leitura() {
         this.indice = new ArrayList<Palavra>();
@@ -47,21 +48,6 @@ public class Leitura {
         return -1;
     }
 
-    public void imprimeIndice() {
-        for (int i = 0; i < this.indice.size(); i++) {
-            System.out.println("Palavra: " + this.indice.get(i).getPalavra());
-            Palavra palavra = indice.get(i);
-            ArrayList<Documento> documentos = palavra.getRepeticoes();
-
-            for (int j = 0; j < documentos.size(); j++) {
-                System.out.print(documentos.get(j).getNome() + "->");
-                System.out.print(documentos.get(j).getRepeticoes() + " ");
-            }
-            System.out.println();
-
-        }
-    }
-
     public void leArquivos() {
         Leitura indiceInvertido = new Leitura();
 
@@ -72,6 +58,7 @@ public class Leitura {
             File arquivos = afile[i];
 
             if (arquivos.getName().contains("file")) {
+                quantidadeArquivos++;
                 this.arquivos.add(arquivos.getName());
                 List<String> palavras = new ArrayList<>();
                 List<String> listaFinal = new ArrayList<>();
@@ -120,7 +107,47 @@ public class Leitura {
             }
 
         }
-        //Leitura.imprimeIndice();
         indice = indiceInvertido.getIndice();
+        atualizaPeso();
+    }
+
+    public void imprimeIndice() {
+        for (int i = 0; i < this.indice.size(); i++) {
+            System.out.println("Palavra: " + this.indice.get(i).getPalavra());
+            Palavra palavra = indice.get(i);
+            ArrayList<Documento> documentos = palavra.getRepeticoes();
+
+            for (int j = 0; j < documentos.size(); j++) {
+                System.out.print(documentos.get(j).getNome() + "->");
+                System.out.print(documentos.get(j).getRepeticoes() + " ");
+                System.out.print("Peso: ");
+                System.out.print(String.format("%.3f", documentos.get(j).getPeso()) + " ");
+            }
+            System.out.println();
+
+        }
+    }
+
+    public void atualizaPeso() {
+        File file = new File("Arquivos");
+        File afile[] = file.listFiles();
+
+        for (int i = 0; i < this.indice.size(); i++) {
+            Palavra palavra = indice.get(i);
+            ArrayList<Documento> documentos = palavra.getRepeticoes();
+
+            for (int j = 0; j < documentos.size(); j++) {
+                indice.get(i).getRepeticoes().get(j).setPeso(calculaPeso(documentos.get(j).getRepeticoes(), quantidadeArquivos, documentos.size()));
+            }
+
+        }
+    }
+
+    public Double calculaPeso(int freq, int qtdTotal, int qtdPresente){
+        Double peso = 0.0;
+
+        peso = (1 + (Math.log(freq)/Math.log(2))) * (Math.log((qtdTotal/qtdPresente))/Math.log(2));
+
+        return peso;
     }
 }

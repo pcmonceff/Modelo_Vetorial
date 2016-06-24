@@ -3,6 +3,7 @@ package Modelo;
 public class Documento {
     private String nome;
     private int repeticoes;
+    private Double peso;
 
     public Documento(String nome, int repeticoes) {
         this.nome = nome;
@@ -30,5 +31,13 @@ public class Documento {
 
     public void setRepeticoes(int repeticoes) {
         this.repeticoes = repeticoes;
+    }
+
+    public Double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(Double peso) {
+        this.peso = peso;
     }
 }
