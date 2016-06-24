@@ -118,8 +118,8 @@ public class Leitura {
             ArrayList<Documento> documentos = palavra.getRepeticoes();
 
             for (int j = 0; j < documentos.size(); j++) {
-                System.out.print(documentos.get(j).getNome() + "->");
-                System.out.print(documentos.get(j).getRepeticoes() + " ");
+                System.out.print(documentos.get(j).getNome() + " -> ");
+                //System.out.print(documentos.get(j).getRepeticoes() + " ");
                 System.out.print("Peso: ");
                 System.out.print(String.format("%.3f", documentos.get(j).getPeso()) + " ");
             }
