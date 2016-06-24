@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47efe89e-75af-442c-95a7-4f508e92b2f0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Principal/Main.java" afterPath="$PROJECT_DIR$/src/Principal/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Modelo/Teste.java" />
     </list>
     <ignored path="Trabalho_RecuperacaoDaInformacao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,16 +81,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Leitura.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Leitura.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modelo/Leitura.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="120" column="68" selection-start-line="120" selection-start-column="68" selection-end-line="120" selection-end-column="68" />
+            <state relative-caret-position="305">
+              <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#946#947#0" expanded="true" />
                 <element signature="e#986#987#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Teste.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Modelo/Teste.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,8 +129,9 @@
         <option value="$PROJECT_DIR$/src/Modelo/Palavra.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Documento.java" />
         <option value="$PROJECT_DIR$/src/Modelo/IndiceInvertido.java" />
-        <option value="$PROJECT_DIR$/src/Modelo/Leitura.java" />
         <option value="$PROJECT_DIR$/src/Principal/Main.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Leitura.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Teste.java" />
       </list>
     </option>
   </component>
@@ -703,13 +714,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Modelo/Leitura.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="120" column="68" selection-start-line="120" selection-start-column="68" selection-end-line="120" selection-end-column="68" />
+        <state relative-caret-position="305">
+          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#946#947#0" expanded="true" />
             <element signature="e#986#987#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Teste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
